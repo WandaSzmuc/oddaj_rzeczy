@@ -1,7 +1,14 @@
 import "./scss/main.scss";
+import React from "react";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  return <div>test</div>;
+  return (
+    <Router>
+      <Home />
+    </Router>
+  );
 }
 
 export default App;
