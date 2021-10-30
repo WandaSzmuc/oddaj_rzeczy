@@ -5,9 +5,10 @@
 @import "elements/header";
 @import "elements/threecolumns";
 @import "elements/foursteps";
-
+@import "elements/aboutus";
 body {
   font-family: $font-base;
+  color: $main-text-color;
 }
 html {
   font-size: 62.5%;
