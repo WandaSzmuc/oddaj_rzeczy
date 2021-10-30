@@ -1,5 +1,9 @@
+.three_columns {
+  background-color: $main-accent-color;
+  position: relative;
+}
 .three_columns--section {
-  margin: 80px 40px;
+  padding: 80px 40px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,65 @@
+.four_steps--container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.four_steps--headline_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.four_steps--headline {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+.four_steps--decorator {
+}
+
+.four_steps--steps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  padding: 50px 0;
+}
+
+.four_steps--step {
+  max-width: 100px;
+  margin: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.four_steps--step img {
+  margin-bottom: 10px;
+  width: 6em;
+}
+.four_steps--step h1 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.four_steps--step div {
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.four_steps--step p {
+  text-align: center;
+}
+.four_steps--button_container {
+  margin: 50px;
+}
+.four_steps--button {
+  @include header-button;
+}
