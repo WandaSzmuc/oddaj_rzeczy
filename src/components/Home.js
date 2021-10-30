@@ -1,5 +1,5 @@
 import React from "react";
-import HomeNav from "./HomeNav";
+
 import HomeHeader from "./HomeHeader";
 import HomeThreeColumns from "./HomeThreeColumns";
 import HomeFourSteps from "./HomeFourSteps";
@@ -11,7 +11,6 @@ import HomeFooter from "./HomeFooter";
 export default function Home() {
   return (
     <>
-      <HomeNav />
       <HomeHeader />
       <HomeThreeColumns />
       <HomeFourSteps />

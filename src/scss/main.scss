@@ -1,6 +1,12 @@
 @import "generic/reset";
 @import "settings/all";
 
+@import "elements/nav";
+@import "elements/header";
+
 body {
   font-family: $font-base;
+}
+html {
+  font-size: 62.5%;
 }

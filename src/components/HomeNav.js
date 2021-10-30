@@ -3,18 +3,32 @@ import { Link } from "react-router-dom";
 
 const HomeNav = () => {
   return (
-    <div className="home-nav">
-      <div className="home-nav-container">
+    <div className="home_nav">
+      <div className="home_nav--container">
         <div className="registration">
-          <Link to="/Login">Zaloguj</Link>
-          <Link to="/Register">Załóż konto</Link>
+          <Link to="/Login" className="registration_button">
+            Zaloguj
+          </Link>
+          <Link to="/Register" className="registration_button">
+            Załóż konto
+          </Link>
         </div>
-        <div className="sections-links">
-          <Link to="/">Start</Link>
-          <Link to="/HomeFourSteps">O co chodzi?</Link>
-          <Link to="/HomeAboutUs">O nas</Link>
-          <Link to="/HomeOrganizations">Fundacja i organizacje</Link>
-          <Link to="/HomeContact">Kontakt</Link>
+        <div className="sections_links">
+          <Link to="/" className="sections_links--button">
+            Start
+          </Link>
+          <Link to="/HomeFourSteps" className="sections_links--button">
+            O co chodzi?
+          </Link>
+          <Link to="/HomeAboutUs" className="sections_links--button">
+            O nas
+          </Link>
+          <Link to="/HomeOrganizations" className="sections_links--button">
+            Fundacja i organizacje
+          </Link>
+          <Link to="/HomeContact" className="sections_links--button">
+            Kontakt
+          </Link>
         </div>
       </div>
     </div>
