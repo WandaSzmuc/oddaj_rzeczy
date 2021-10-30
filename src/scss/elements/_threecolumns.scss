@@ -1,0 +1,32 @@
+.three_columns--section {
+  margin: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  color: $second-background-color;
+}
+
+.column_container h1 {
+  font-size: 5em;
+}
+
+.column_container h2 {
+  font-size: 2em;
+}
+
+.column_container p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.three_columns--el {
+  margin: 10px;
+}
