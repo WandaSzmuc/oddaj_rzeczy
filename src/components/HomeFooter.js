@@ -1,5 +1,16 @@
 import React from "react";
-
+import facebook from "../assets/Facebook.svg";
+import instagram from "../assets/Instagram.svg";
 export default function HomeFooter() {
-  return <div></div>;
+  return (
+    <div className="footer-container">
+      <div className="footer-container--copyrights">
+        <p>Copyright by Coders Lab</p>
+      </div>
+      <div className="footer-container--icons">
+        <img src={facebook} />
+        <img src={instagram} />
+      </div>
+    </div>
+  );
 }

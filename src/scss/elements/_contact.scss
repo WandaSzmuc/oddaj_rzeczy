@@ -4,8 +4,12 @@
   background-size: cover;
   height: 100vh;
   display: flex;
+  flex-direction: column;
 }
-
+.main_contact--footer {
+  display: flex;
+  height: 100%;
+}
 .main_contact--section {
   width: 50%;
   display: flex;
@@ -37,6 +41,8 @@
 
 .contact_form label {
   margin: 15px 0;
+  font-size: 1.3em;
+  font-weight: 600;
 }
 .contact_form input {
   border: none;

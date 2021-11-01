@@ -1,0 +1,17 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer-container--icons {
+  margin-right: 50px;
+}
+
+.footer-container--copyrights {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  font-size: 1.4em;
+  font-weight: 500;
+}

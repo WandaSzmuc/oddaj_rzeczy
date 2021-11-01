@@ -6,7 +6,6 @@ import HomeFourSteps from "./HomeFourSteps";
 import HomeAboutUs from "./HomeAboutUs";
 import HomeOrganizations from "./HomeOrganizations";
 import HomeContact from "./HomeContact";
-import HomeFooter from "./HomeFooter";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       <HomeAboutUs />
       <HomeOrganizations />
       <HomeContact />
-      <HomeFooter />
     </>
   );
 }
