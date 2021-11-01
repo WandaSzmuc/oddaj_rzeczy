@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function HomeOrganizations() {
-  return <div></div>;
+  return <div id="organizations"></div>;
 }

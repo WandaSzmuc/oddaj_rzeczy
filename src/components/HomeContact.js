@@ -2,7 +2,7 @@ import React from "react";
 import decorator from "../assets/Decoration.svg";
 export default function HomeContact() {
   return (
-    <div className="main_contact--container">
+    <div className="main_contact--container" id="contact">
       <div className="main_contact--section">
         <div className="main_contact--decoration"></div>{" "}
       </div>

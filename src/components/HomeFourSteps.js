@@ -7,7 +7,7 @@ import icon4 from "../assets/Icon-4.svg";
 
 export default function HomeFourSteps() {
   return (
-    <div className="four_steps--container">
+    <div className="four_steps--container" id="steps">
       <div className="four_steps--headline_container">
         <h1 className="four_steps--headline">Wystarczą 4 proste kroki</h1>
         <img src={decorator} className="four_steps--decorator" />
