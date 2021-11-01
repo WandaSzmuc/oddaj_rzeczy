@@ -6,10 +6,10 @@ const HomeNav = () => {
     <div className="home_nav">
       <div className="home_nav--container">
         <div className="registration">
-          <Link to="/Login" className="registration_button">
+          <Link to="/login" className="registration_button">
             Zaloguj
           </Link>
-          <Link to="/Register" className="registration_button">
+          <Link to="/register" className="registration_button">
             Załóż konto
           </Link>
         </div>
