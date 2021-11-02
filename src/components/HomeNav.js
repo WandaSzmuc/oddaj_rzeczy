@@ -14,14 +14,9 @@ const HomeNav = ({ duration }) => {
           </Link>
         </div>
         <div className="sections_links">
-          <ScrollLink
-            to="/"
-            smooth={true}
-            duration={duration}
-            className="sections_links--button"
-          >
+          <Link to="/" className="sections_links--button">
             Start
-          </ScrollLink>
+          </Link>
           <ScrollLink
             to="steps"
             smooth={true}

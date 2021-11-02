@@ -1,10 +1,10 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import decorator from "../assets/Decoration.svg";
 
 export default function HomeHeader() {
   return (
-    <div className="header_container">
+    <div className="header_container" id="home">
       <div className=" header_el header_el--image"> </div>
       <div className="header_el">
         <div className="header_center--section">
@@ -14,12 +14,12 @@ export default function HomeHeader() {
             </h1>
             <img src={decorator} />
             <div className="header-buttons__container">
-              <a href="#" className="header-button">
+              <Link to="/login" className="header-button">
                 Oddaj rzeczy
-              </a>
-              <a href="#" className="header-button">
+              </Link>
+              <Link to="/login" className="header-button">
                 Zorganizuj zbiórkę
-              </a>
+              </Link>
             </div>
           </div>
         </div>

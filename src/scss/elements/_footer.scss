@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  z-index: 2;
 }
 .footer-container--icons {
   margin-right: 50px;
