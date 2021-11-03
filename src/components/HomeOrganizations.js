@@ -2,6 +2,9 @@ import React from "react";
 import decorator from "../assets/Decoration.svg";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import Fundations from "./HelpUnits/Fundations";
+import Organizations from "./HelpUnits/Organizations";
+import Local from "./HelpUnits/Local";
 
 export default function HomeOrganizations() {
   return (
@@ -24,27 +27,35 @@ export default function HomeOrganizations() {
                 attack by Bowser. She often plays the damsel in distress role
                 within the series and is the lead female.
               </div>
-              <div className="pagination_container"></div>
+              <div className="pagination_container">
+                {" "}
+                <Fundations />
+              </div>
             </div>
           </TabPanel>
           <TabPanel className="tab_panell">
             <div className="tab_panell--container">
               <div className="tab_description">
-                Tutaj jest opis organizacji bla bla bla , which is constantly
-                under attack by Bowser. She often plays the damsel in distress
-                role within the series and is the lead female.
+                Tutaj jest opis organizacji b , which is constantly under attack
+                by Bowser. She often plays the damsel in distress role within
+                the series and is the lead female.
               </div>
-              <div className="pagination_container"></div>
+              <div className="pagination_container">
+                {" "}
+                <Organizations />
+              </div>
             </div>
           </TabPanel>
           <TabPanel className="tab_panell">
             <div className="tab_panell--container">
               <div className="tab_description">
-                Tutaj jest opis lokalnych zbiórek bla bla bla , which is
-                constantly under attack by Bowser. She often plays the damsel in
-                distress role within the series and is the lead female.
+                Tutaj jest opis lokalnych zbiórek , which is constantly under
+                attack by Bowser. She often plays the damsel in distress role
+                within the series and is the lead female.
               </div>
-              <div className="pagination_container"></div>
+              <div className="pagination_container">
+                <Local />
+              </div>
             </div>
           </TabPanel>
         </Tabs>
