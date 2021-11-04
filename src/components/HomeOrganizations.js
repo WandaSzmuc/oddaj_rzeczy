@@ -3,8 +3,6 @@ import decorator from "../assets/Decoration.svg";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Fundations from "./HelpUnits/Fundations";
-import Organizations from "./HelpUnits/Organizations";
-import Local from "./HelpUnits/Local";
 
 export default function HomeOrganizations() {
   return (
@@ -29,7 +27,7 @@ export default function HomeOrganizations() {
               </div>
               <div className="pagination_container">
                 {" "}
-                <Fundations />
+                <Fundations fundations={"fundations"} />
               </div>
             </div>
           </TabPanel>
@@ -42,7 +40,7 @@ export default function HomeOrganizations() {
               </div>
               <div className="pagination_container">
                 {" "}
-                <Organizations />
+                <Fundations fundations={"organizations"} />
               </div>
             </div>
           </TabPanel>
@@ -54,7 +52,7 @@ export default function HomeOrganizations() {
                 within the series and is the lead female.
               </div>
               <div className="pagination_container">
-                <Local />
+                <Fundations fundations={"local"} />
               </div>
             </div>
           </TabPanel>

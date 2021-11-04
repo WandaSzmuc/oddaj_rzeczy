@@ -1,0 +1,22 @@
+.pagination_container {
+  margin-top: 20px;
+  width: 100%;
+  width: 1025px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.help_unit {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $second-background-color;
+}
+
+.help_unit--el {
+}
