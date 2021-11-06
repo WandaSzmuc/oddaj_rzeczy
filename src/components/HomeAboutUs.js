@@ -7,14 +7,14 @@ export default function HomeAboutUs() {
     <div className="about_us--container" id="about">
       <div className="about_us--section about_us--description">
         <h1>O nas</h1>
-        <img src={decorator} />
+        <img src={decorator} alt="decorator" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <img src={signature} className="about_us--signature" />
+        <img src={signature} alt="signature" className="about_us--signature" />
       </div>
       <div className="about_us--section about_us--img">/></div>
     </div>

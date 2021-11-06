@@ -9,7 +9,7 @@ export default function Login() {
       <div className="login_section">
         <div className="login_container">
           <h1 className="login_heading">Zaloguj się</h1>
-          <img src={decorator} className="login_decorator" />
+          <img src={decorator} alt="decorator" className="login_decorator" />
           <form>
             <div className="login_form">
               <div className="login_form--inputs">

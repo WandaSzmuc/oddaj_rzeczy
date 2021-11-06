@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
+import Fundation from "./Fundation";
+import Pagination from "./Pagination";
 
 export default function Fundations({ fundations }) {
   const [units, setUnit] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(3);
 
   useEffect(() => {
     fetch(`http://localhost:3000/${fundations}`).then((result) => {
@@ -12,18 +16,18 @@ export default function Fundations({ fundations }) {
     });
   }, []);
 
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = units.slice(indexOfFirstPost, indexOfLastPost);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <div>
-      {units.map((unit) => (
-        <div className="help_unit">
-          <div className="help_unit--el">
-            <h1 className="help_unit--name">{unit.name}</h1>
-            <p className="help_unit--description">{unit.description}</p>
-          </div>
-
-          <div className="help_unit--el help_unit--stuff">{unit.stuff}</div>
-        </div>
-      ))}
+      <Fundation units={currentPosts} />
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={units.length}
+        paginate={paginate}
+      />
     </div>
   );
 }

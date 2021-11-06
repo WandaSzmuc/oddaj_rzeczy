@@ -12,7 +12,7 @@ export default function HomeHeader() {
             <h1 className="center_section--headline">
               Zacznij pomagać!<br></br>Oddaj niechciane rzeczy w zaufane ręce
             </h1>
-            <img src={decorator} />
+            <img src={decorator} alt="decorator" />
             <div className="header-buttons__container">
               <Link to="/login" className="header-button">
                 Oddaj rzeczy

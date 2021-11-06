@@ -11,7 +11,7 @@ export default function HomeContact() {
 
         <div className="main_contact--section main_contact--form">
           <h1>Skontaktuj się z nami</h1>
-          <img src={decorator} />
+          <img src={decorator} alt="decorator" />
           <form className="contact_form">
             <div className="contact_form--section">
               <div className="contact_form--container">

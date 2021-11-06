@@ -8,8 +8,8 @@ export default function HomeFooter() {
         <p>Copyright by Coders Lab</p>
       </div>
       <div className="footer-container--icons">
-        <img src={facebook} />
-        <img src={instagram} />
+        <img src={facebook} alt="facebook" />
+        <img src={instagram} alt="instagram" />
       </div>
     </div>
   );

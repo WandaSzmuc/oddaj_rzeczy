@@ -16,32 +16,32 @@
       "stuff": "ubrania, jedzenie, ciepłe koce"
     },
     {
-      "name": "Dzieci są ważne",
+      "name": "Fundacja Dzieci są ważne",
       "description": "Cel i misja: Pomoc dzieciom znajdującym się w trudnej sytuacji życiowej.",
       "stuff": "buty, ubrania, jedzenie, sprzęt AGD, zabawki"
     },
     {
-      "name": "Zwierzakom",
+      "name": "Fundacja Zwierzakom",
       "description": "Cel i misja: Pomoc zwierzakom z ubogich rodzin.",
       "stuff": "jedzenie, koce, stare ubrania"
     },
     {
-      "name": "Pomoc seniorom",
+      "name": "Fundacja Pomoc seniorom",
       "description": "Cel i misja: Pomoc dla osób starszych.",
       "stuff": "znowu ubrania, jedzenie, ciepłe koce, książki"
     },
     {
-      "name": "Znowu dbam o Zdrowie",
+      "name": "Fundacja Znowu dbam o Zdrowie",
       "description": "Cel i misja: Znowu pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
       "stuff": "znowu ubrania, jedzenie, sprzęt AGD, meble, zabawki"
     },
     {
-      "name": "Znowu dla dzieci",
+      "name": "Fundacja Znowu dla dzieci",
       "description": "Cel i misja: Znowu pomoc dzieciom z ubogich rodzin.",
       "stuff": "znowu ubrania, meble, zabawki"
     },
     {
-      "name": "Znowu bez domu",
+      "name": "Fundacja Znowu bez domu",
       "description": "Cel i misja: Znowu pomoc dla osób nie posiadających miejsca zamieszkania.",
       "stuff": "znowu ubrania, jedzenie, ciepłe koce"
     }
@@ -50,49 +50,49 @@
     {
       "name": "Organizacja 1",
       "description": "1 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "1 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     },
     {
       "name": "Organizacja 2",
       "description": "2 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "2 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     },
     {
       "name": "Organizacja 3",
       "description": "3 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "3 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     },
     {
       "name": "Organizacja 4",
       "description": "4 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "4 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     },
     {
       "name": "Organizacja 5",
       "description": "5 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "5 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     },
     {
       "name": "Organizacja 6",
       "description": "6 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "6 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     }
   ],
   "local": [
     {
       "name": "Zbiórka 1",
       "description": "1 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "1 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     },
     {
       "name": "Zbiórka 2",
       "description": "2 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "2 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     },
     {
       "name": "Zbiórka 3",
       "description": "3 Quis varius quam quisque id diam vel quam elementum pulvinar.",
-      "stuff": "3 Egestas, sed, tempus"
+      "stuff": "Egestas, sed, tempus"
     }
   ]
 }
