@@ -4,6 +4,6 @@ Celem projektu jest stworzenie miejsca, w którym każdy będzie mógł oddać n
 Projekt będzie stroną internetową z prostym formularzem, który ułatwi użytkownikom oddanie rzeczy.
 
 # Technologies Used
-React
-React router
-SASS
+- React
+- React router
+- SASS
