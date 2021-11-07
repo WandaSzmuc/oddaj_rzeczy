@@ -16,15 +16,18 @@ export default function HomeContact() {
             <div className="contact_form--section">
               <div className="contact_form--container">
                 <label>Wpisz swoje imię</label>
-                <input></input>
+                <input value="Krzysztof"></input>
               </div>
               <div className="contact_form--container">
                 <label>Wpisz swój email</label>
-                <input></input>
+                <input value="abc@xyz.com"></input>
               </div>
             </div>
             <label>Wpisz swoją wiadomość</label>
-            <input className="message_input"></input>
+            <input
+              className="message_input"
+              value="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            ></input>
             <button>Wyślij</button>
           </form>
         </div>
