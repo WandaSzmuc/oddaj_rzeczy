@@ -31,15 +31,20 @@
 }
 
 .tab_list--el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100px;
+  min-height: 40px;
   font-size: 1.4em;
   line-height: 25px;
   margin: 0 20px;
   padding: 10px 20px;
   text-align: center;
+  border: 1px solid white;
 }
 
-.tab_list--el:active {
+.tab_list--el:hover {
   border: 1px solid black;
   border-radius: 0;
 }

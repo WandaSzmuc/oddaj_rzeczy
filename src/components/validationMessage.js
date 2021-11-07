@@ -6,7 +6,7 @@ const validationMessage = (values) => {
     errors.name = "Podane imię jest niepoprawne!";
   }
   if (!values.email) {
-    errors.email = "Email is requires.";
+    errors.email = "Podaj adres email!";
   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
     errors.email = "Email jest niepoprawny!";
   }

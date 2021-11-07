@@ -6,7 +6,7 @@ export default function HomeHeader() {
   return (
     <div className="header_container" id="home">
       <div className=" header_el header_el--image"> </div>
-      <div className="header_el">
+      <div className="header_el header_el--heading">
         <div className="header_center--section">
           <div className="center_section--elements">
             <h1 className="center_section--headline">

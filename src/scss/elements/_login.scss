@@ -59,7 +59,15 @@
   padding: 10px 10px;
   font-size: 1.3rem;
   color: $main-text-color;
+  border: 1px solid white;
+
   &:hover {
     border: 1px solid $main-text-color;
   }
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+  font-weight: 600;
 }

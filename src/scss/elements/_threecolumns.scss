@@ -8,6 +8,11 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1090px) {
+  .three_columns--section {
+    flex-direction: column;
+  }
+}
 
 .column_container {
   display: flex;
@@ -33,4 +38,9 @@
 
 .three_columns--el {
   margin: 10px;
+}
+@media (max-width: 1090px) {
+  .three_columns--el {
+    max-width: 500px;
+  }
 }

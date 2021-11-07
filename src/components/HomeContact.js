@@ -24,9 +24,7 @@ export default function HomeContact() {
   return (
     <div className="main_contact--container" id="contact">
       <div className="main_contact--footer">
-        <div className="main_contact--section">
-          <div className="main_contact--decoration"></div>{" "}
-        </div>
+        <div className="main_contact--section main_contact--decoration"></div>
 
         <div className="main_contact--section main_contact--form">
           <h1>Skontaktuj się z nami</h1>

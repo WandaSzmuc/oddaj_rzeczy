@@ -18,12 +18,32 @@
   justify-content: space-between;
   border-bottom: 1px solid $second-background-color;
 }
+@media (max-width: 1080px) {
+  .help_unit {
+    min-width: 525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .help_unit--name {
   font-size: 1.3em;
   margin-bottom: 5px;
 }
+@media (max-width: 1080px) {
+  .help_unit--name {
+    text-align: center;
+  }
+}
+
 .help_unit--description {
   font-style: italic;
+}
+@media (max-width: 1080px) {
+  .help_unit--description {
+    margin: 15px 0;
+  }
 }
 .help_unit--stuff {
 }
@@ -34,4 +54,14 @@
 }
 .page-item {
   margin: 10px;
+}
+.page-link {
+  padding: 3px 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: $second-background-color;
+  border: 1px solid white;
+}
+.page-link:hover {
+  border: 1px solid $second-background-color;
 }

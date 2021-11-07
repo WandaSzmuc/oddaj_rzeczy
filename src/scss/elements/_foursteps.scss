@@ -28,6 +28,11 @@
   background-color: rgb(240, 240, 240);
   padding: 50px 0;
 }
+@media (max-width: 950px) {
+  .four_steps--steps {
+    flex-direction: column;
+  }
+}
 
 .four_steps--step {
   max-width: 100px;
@@ -38,14 +43,32 @@
   align-items: center;
   color: $main-text-color;
 }
+@media (max-width: 950px) {
+  .four_steps--step {
+    margin: 20px 0;
+  }
+}
 
 .four_steps--step img {
   margin-bottom: 10px;
   width: 6em;
 }
+@media (max-width: 950px) {
+  .four_steps--step img {
+    width: 8em;
+  }
+}
 .four_steps--step h1 {
   font-size: 1.3em;
   margin-bottom: 5px;
+}
+@media (max-width: 950px) {
+  .four_steps--step h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
 }
 
 .four_steps--step div {
@@ -54,9 +77,20 @@
   background-color: black;
   margin-bottom: 10px;
 }
-
+@media (max-width: 950px) {
+  .four_steps--step div {
+    width: 80px;
+  }
+}
 .four_steps--step p {
   text-align: center;
+}
+@media (max-width: 950px) {
+  .four_steps--step p {
+    width: 120px;
+    font-size: 1.3em;
+    font-weight: 500;
+  }
 }
 .four_steps--button_container {
   margin: 70px;

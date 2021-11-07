@@ -1,6 +1,7 @@
 .header_container {
   display: flex;
 }
+
 .header_el {
   display: flex;
   flex-direction: column;
@@ -11,6 +12,14 @@
   background-image: url(../../assets/Home-Hero-Image.jpg);
   background-position: right;
   background-size: cover;
+}
+@media only (max-width: 1025px) {
+  .header_el--image {
+    display: none;
+  }
+  .header_el--heading {
+    width: 100%;
+  }
 }
 
 .header_center--section {

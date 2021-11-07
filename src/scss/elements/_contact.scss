@@ -27,6 +27,14 @@
   align-items: center;
   z-index: 2;
 }
+@media (max-width: 1025px) {
+  .main_contact--form {
+    width: 100%;
+  }
+  .main_contact--decoration {
+    display: none;
+  }
+}
 
 .main_contact--form h1 {
   font-size: 2.5em;

@@ -72,13 +72,13 @@ export default function Register() {
             <Link to="/login" className="login_form--button">
               Zaloguj
             </Link>
-            <button
+            <a
               className="login_form--button"
               onClick={handleFormSubmit}
               type="submit"
             >
               Załóż konto
-            </button>
+            </a>
           </div>
         </div>
       </div>
