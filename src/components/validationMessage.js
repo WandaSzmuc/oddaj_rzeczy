@@ -1,5 +1,8 @@
 const validationMessage = (values) => {
   let errors = {};
+  let name = values.name;
+  let email = values.email;
+  let message = values.message;
   if (!values.name) {
     errors.name = "Podaj imię!";
   } else if (values.name.length < 3) {
@@ -15,21 +18,7 @@ const validationMessage = (values) => {
   } else if (values.message.length < 120) {
     errors.message = "Wiadomość musi mieć conajmniej 120 znaków!";
   }
-  if (errors) {
-    fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
-      method: "POST",
-      body: JSON.stringify(values),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+
   return errors;
 };
 

@@ -20,6 +20,24 @@ export default function HomeContact() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     setErrors(validationMessage(values));
+    sendMessage(values);
+  };
+  const sendMessage = (values) => {
+    if (values) {
+      fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
+        method: "POST",
+        body: JSON.stringify(values),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   };
   return (
     <div className="main_contact--container" id="contact">
