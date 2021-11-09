@@ -1,4 +1,3 @@
-// https://fer-api.coderslab.pl/v1/portfolio/contact`.
 import React, { useState } from "react";
 import decorator from "../assets/Decoration.svg";
 import HomeFooter from "./HomeFooter";
@@ -17,28 +16,34 @@ export default function HomeContact() {
       [event.target.name]: event.target.value,
     });
   };
+
+  const sendMessage = (values) => {
+    fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
+      method: "POST",
+      body: JSON.stringify(values),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    setErrors(validationMessage(values));
+
+    if (Object.keys(validationMessage(values)).length) {
+      setErrors({ ...errors, ...validationMessage(values) });
+      return;
+    }
+
     sendMessage(values);
   };
-  const sendMessage = (values) => {
-    if (values) {
-      fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
-        method: "POST",
-        body: JSON.stringify(values),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  };
+
   return (
     <div className="main_contact--container" id="contact">
       <div className="main_contact--footer">
@@ -47,7 +52,7 @@ export default function HomeContact() {
         <div className="main_contact--section main_contact--form">
           <h1>Skontaktuj się z nami</h1>
           <img src={decorator} alt="decorator" />
-          <form className="contact_form">
+          <form onSubmit={handleFormSubmit} className="contact_form">
             <div className="contact_form--section">
               <div className="contact_form--container">
                 <label>Wpisz swoje imię</label>
@@ -79,9 +84,7 @@ export default function HomeContact() {
               onChange={handleChange}
             ></input>
             {errors.message && <p className="error">{errors.message}</p>}
-            <button onClick={handleFormSubmit} type="submit">
-              Wyślij
-            </button>
+            <button type="submit">Wyślij</button>
           </form>
         </div>
       </div>

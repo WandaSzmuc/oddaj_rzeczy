@@ -1,21 +1,19 @@
-const validationMessage = (values) => {
+const validationMessage = ({ name, email, message }) => {
   let errors = {};
-  let name = values.name;
-  let email = values.email;
-  let message = values.message;
-  if (!values.name) {
+
+  if (!name) {
     errors.name = "Podaj imię!";
-  } else if (values.name.length < 3) {
+  } else if (name.length < 3) {
     errors.name = "Podane imię jest niepoprawne!";
   }
-  if (!values.email) {
+  if (!email) {
     errors.email = "Podaj adres email!";
-  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-    errors.email = "Email jest niepoprawny!";
+  } else if (!/\S+@\S+\.\S+/.test(email)) {
+    email = "Email jest niepoprawny!";
   }
-  if (!values.message) {
+  if (!message) {
     errors.message = "Wpisz wiadomość!";
-  } else if (values.message.length < 120) {
+  } else if (message.length < 120) {
     errors.message = "Wiadomość musi mieć conajmniej 120 znaków!";
   }
 
