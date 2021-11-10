@@ -8,11 +8,14 @@
 .footer-container--icons {
   margin-right: 50px;
 }
-
+.footer-container--icons img {
+  height: 20px;
+  margin-right: 5px;
+}
 .footer-container--copyrights {
   display: flex;
   justify-content: flex-end;
   width: 50%;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 500;
 }

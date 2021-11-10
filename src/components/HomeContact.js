@@ -9,6 +9,10 @@ export default function HomeContact() {
     email: "",
     message: "",
   });
+  const [serverResponse, setServerResponse] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
   const handleChange = (event) => {
     setValues({
@@ -27,7 +31,19 @@ export default function HomeContact() {
     })
       .then((response) => {
         console.log(response);
+        if (response.status === 200) {
+          setServerResponse(
+            "Wiadomość została wysłana! Wkrótce się skontaktujemy!"
+          );
+          setName("");
+          setEmail("");
+          setMessage("");
+          setTimeout(() => {
+            setServerResponse("");
+          }, 3000);
+        }
       })
+
       .catch((error) => {
         console.log(error);
       });
@@ -52,6 +68,8 @@ export default function HomeContact() {
         <div className="main_contact--section main_contact--form">
           <h1>Skontaktuj się z nami</h1>
           <img src={decorator} alt="decorator" />
+          {}
+          {serverResponse && <h3 className="message-sent">{serverResponse}</h3>}
           <form onSubmit={handleFormSubmit} className="contact_form">
             <div className="contact_form--section">
               <div className="contact_form--container">
