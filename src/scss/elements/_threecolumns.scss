@@ -29,6 +29,12 @@
 
 .column_container h2 {
   font-size: 2em;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .column_container h2 {
+    font-size: 1.3em;
+  }
 }
 
 .column_container p {

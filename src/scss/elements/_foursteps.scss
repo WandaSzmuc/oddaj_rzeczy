@@ -17,7 +17,13 @@
   font-size: 3em;
   margin-bottom: 30px;
 }
-.four_steps--decorator {
+@media (max-width: 390px) {
+  .four_steps--headline {
+    font-size: 2em;
+  }
+  .four_steps--decorator {
+    width: 130px;
+  }
 }
 
 .four_steps--steps {
@@ -97,4 +103,11 @@
 }
 .four_steps--button {
   @include header-button;
+}
+@media (max-width: 420px) {
+  .four_steps--button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 0;
+  }
 }

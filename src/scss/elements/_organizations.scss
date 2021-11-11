@@ -22,12 +22,21 @@
   align-items: center;
   flex-direction: column;
 }
-
+@media (max-width: 530px) {
+  .tabs_container {
+    flex-direction: row;
+  }
+}
 .tab_list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px 0;
+}
+@media (max-width: 530px) {
+  .tab_list {
+    flex-direction: column;
+  }
 }
 
 .tab_list--el {
@@ -42,6 +51,14 @@
   padding: 10px 20px;
   text-align: center;
   border: 1px solid white;
+}
+@media (max-width: 530px) {
+  .tab_list--el {
+    font-size: 1em;
+    line-height: 15px;
+    padding: 5px 10px;
+    margin: 0 10px;
+  }
 }
 .react-tabs__tab--selected {
   border-radius: 0;

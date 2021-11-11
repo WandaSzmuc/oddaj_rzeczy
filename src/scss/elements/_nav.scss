@@ -31,6 +31,11 @@
 .sections_links {
   margin: 20px 10px;
 }
+@media (max-width: 630px) {
+  .sections_links--none {
+    display: none;
+  }
+}
 .sections_links--button {
   text-decoration: none;
   margin: 20px 15px;

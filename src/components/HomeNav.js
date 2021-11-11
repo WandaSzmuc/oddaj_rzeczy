@@ -14,14 +14,14 @@ const HomeNav = ({ duration }) => {
           </Link>
         </div>
         <div className="sections_links">
-          <Link to="/" className="sections_links--button">
+          <Link to="/" className="sections_links--button ">
             Start
           </Link>
           <ScrollLink
             to="steps"
             smooth={true}
             duration={duration}
-            className="sections_links--button"
+            className="sections_links--button sections_links--none"
           >
             O co chodzi?
           </ScrollLink>
@@ -29,7 +29,7 @@ const HomeNav = ({ duration }) => {
             to="about"
             smooth={true}
             duration={duration}
-            className="sections_links--button"
+            className="sections_links--button sections_links--none"
           >
             O nas
           </ScrollLink>
@@ -37,7 +37,7 @@ const HomeNav = ({ duration }) => {
             to="organizations"
             smooth={true}
             duration={duration}
-            className="sections_links--button"
+            className="sections_links--button sections_links--none"
           >
             Fundacja i organizacje
           </ScrollLink>
@@ -45,7 +45,7 @@ const HomeNav = ({ duration }) => {
             to="contact"
             smooth={true}
             duration={duration}
-            className="sections_links--button"
+            className="sections_links--button sections_links--none"
           >
             Kontakt
           </ScrollLink>

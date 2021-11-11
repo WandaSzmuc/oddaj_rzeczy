@@ -20,12 +20,16 @@
 .login_form {
   margin-top: 40px;
   background-color: $main-background-color;
-  //   height: 170px;
   width: 290px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 440px) {
+  .login_form {
+    width: 250px;
+  }
 }
 .login_form--inputs {
   margin: 15px 0;
@@ -52,6 +56,11 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
+}
+@media (max-width: 440px) {
+  .login_form--buttons {
+    width: 200px;
+  }
 }
 .login_form--button {
   text-decoration: none;

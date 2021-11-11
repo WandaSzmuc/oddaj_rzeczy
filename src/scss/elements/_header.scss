@@ -39,12 +39,27 @@
   margin-bottom: 20px;
   line-height: 42px;
 }
+@media (max-width: 550px) {
+  .center_section--headline {
+    font-size: 1.5rem;
+  }
+}
 .header-buttons__container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
+@media (max-width: 550px) {
+  .header-buttons__container {
+    flex-direction: column;
+  }
+}
 .header-button {
   @include header-button;
+}
+@media (max-width: 550px) {
+  .header-button {
+    font-size: 1.5em;
+  }
 }
