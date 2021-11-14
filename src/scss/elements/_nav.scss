@@ -31,11 +31,7 @@
 .sections_links {
   margin: 20px 10px;
 }
-@media (max-width: 630px) {
-  .sections_links--none {
-    display: none;
-  }
-}
+
 .sections_links--button {
   text-decoration: none;
   margin: 20px 15px;
@@ -47,3 +43,39 @@
 .sections_links--button:hover {
   border: 1px solid $main-text-color;
 }
+
+// MOBILE NAVIGATION
+
+.mobile_navigation {
+  display: none;
+}
+
+@media (max-width: 645px) {
+  .mobile_navigation {
+    display: flex;
+  }
+  .sections_links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    top: 90px;
+    border-radius: 5px;
+    background-color: $second-background-color;
+  }
+  .sections_links--button {
+    align-self: flex-end;
+    color: white;
+    border: 1px solid $second-background-color;
+  }
+  .normal_navigation {
+    display: none;
+  }
+  .hamburger {
+    height: 60px;
+    width: 40px;
+    position: absolute;
+    right: 45px;
+    cursor: pointer;
+  }
+} ;
